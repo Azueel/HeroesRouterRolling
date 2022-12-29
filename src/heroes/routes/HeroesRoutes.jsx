@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Navbar } from '../../ui/components/NavBar';
 import { DcScreen } from '../pages/DcScreen';
+import { HeroScreen } from '../pages/HeroScreen';
 import { MarvelScreen } from '../pages/MarvelScreen';
 import { SearchScreen } from '../pages/SearchScreen';
 
@@ -15,6 +16,7 @@ export const HeroesRoutes = () => {
 					<Route path="/marvel" element={<MarvelScreen />} />
 					<Route path="/dc" element={<DcScreen />} />
 					<Route path="/search" element={<SearchScreen />} />
+					<Route path="/hero/:id" element={<HeroScreen />} />
 					<Route path="*" element={<MarvelScreen />} />
 				</Routes>
 			</div>
